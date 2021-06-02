@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+{% extends 'movies/base.html' %}
+{% block content %}
+<div class="container">
+    <table class="table table-bordered table-hover">
+        <tr>
+            <th>Title</th>
+            <th>Value</th>
+        </tr>
+        <tr>
+            <td><em>Name<em></td>
+            <td>{{movie.name}} </td>
+        </tr>
+        <tr>
+            <td><em>Genre<em></td>
+            <td> {{movie.genre}}</td>
+        </tr>
+        <tr>
+            <td><em>In Stock <em></td>
+            <td>{{movie.in_stock}} </td>
+        </tr>
+        <tr>
+            <td><em>Rate <em></td>
+            <td>{{movie.daily_rate}} </td>
+        </tr>
+        <tr>
+            <td><em>Release <em></td>
+            <td> {{movie.release}}</td>
+        </tr>
+    </table>
+</div>
+{% endblock  %}

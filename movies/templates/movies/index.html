@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{% extends 'movies/base.html' %}
+{% block title %}Movies{% endblock %}
+{% block content %}
+   <div class="container">
+        <table class="table table-bordered table-hover">
+            <tr>
+                <th>Sr. No.</th>
+                <th>Title</th>
+                <th>Genre</th>
+            </tr>
+            {% for movie in movies %}
+            <tr>
+                <td><a href="{% url 'movies:detail' movie.id %}">{{movie.id}}</a></td>
+                <td>{{movie.name}}</td>
+                <td>{{movie.genre}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+   </div>
+{% endblock %}
