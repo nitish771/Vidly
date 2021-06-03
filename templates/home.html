@@ -3,5 +3,7 @@
 {% block title %}Homepage{% endblock %}
 
 {% block content %}
-    <h1>Hey There!</h1>
+    <div class="container">
+        <a href="{% url 'movies:index' %}">Movies</a>
+    </div>
 {% endblock %}
