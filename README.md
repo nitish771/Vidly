@@ -29,4 +29,4 @@ A Basic Django App which has API built over django-tastypie.
 
 ## Visit Website
 
-[pythonanywhere.com](!https://www.pythonanywhere.com)
+[pythonanywhere.com](http://nitish770.pythonanywhere.com)
